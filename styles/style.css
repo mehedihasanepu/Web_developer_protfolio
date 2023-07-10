@@ -38,6 +38,7 @@ body {
     background-image: url("../images/header_bg.png"),url("../images/developer.png");
     background-repeat: no-repeat;
     background-position: bottom right, top left;
+    background-size: auto,80px;
     width: 100%;
 }
 
