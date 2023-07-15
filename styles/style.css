@@ -15,6 +15,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 10px
 }
 
 .section-title {
@@ -259,13 +260,36 @@ textarea {
 
 /* media */
 @media screen and (max-width:576px) {
-    .about-info-container{
+    .primary-btn {
+        border-radius: 5px;
+        background: #FD6E0A;
+        padding: 10px 22px;
+        border: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .header {
+        background-image: none;
+
+    }
+    .nav{
+        margin: 10px 10px 10px 30px;
+    }
+    .banner{
         flex-direction: column;
+        padding: 10px 10px 10px 30px;
+    }
+    .profile-pic{
+        width: auto;
+        padding-left: 30px;
+        padding-top: 30px;
     }
     #what-I-do_decsription {
         padding: 20px;
     }
 
+    .about-info-container,
     .skills-container {
         flex-direction: column;
     }
@@ -292,6 +316,16 @@ textarea {
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    .primary-btn {
+        border-radius: 5px;
+        background: #FD6E0A;
+        padding: 12px 25px;
+        border: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 10px;
+    }
     .about-info-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
