@@ -250,3 +250,13 @@ textarea {
 .social-link a{
     margin-right: 25px;
 }
+.hide{
+    display: none;
+}
+
+/* media */
+/* @media screen and (max-width:576px) {
+    .skills-container{
+        flex-direction: column;
+    }   
+} */
