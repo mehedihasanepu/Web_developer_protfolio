@@ -35,10 +35,10 @@ body {
 /* header section  */
 .header {
     background-color: #FFF8F3;
-    background-image: url("../images/header_bg.png"),url("../images/developer.png");
+    background-image: url("../images/header_bg.png"), url("../images/developer.png");
     background-repeat: no-repeat;
     background-position: bottom right, top left;
-    background-size: auto,80px;
+    background-size: auto, 80px;
     width: 100%;
 }
 
@@ -235,7 +235,8 @@ footer {
 }
 
 
-.contact input[type="text"], input[type="email"],
+.contact input[type="text"],
+input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -247,16 +248,73 @@ textarea {
     border: none;
     width: 100%;
 }
-.social-link a{
+
+.social-link a {
     margin-right: 25px;
 }
-.hide{
+
+.hide {
     display: none;
 }
 
 /* media */
-/* @media screen and (max-width:576px) {
-    .skills-container{
+@media screen and (max-width:576px) {
+    .about-info-container{
         flex-direction: column;
-    }   
-} */
+    }
+    #what-I-do_decsription {
+        padding: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer, .about {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .about-info-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #what-I-do_decsription {
+        padding: 20px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-container {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+    }
+}
